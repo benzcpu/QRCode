@@ -19,10 +19,10 @@ class Render extends CI_Controller {
 	}
 
 	public function renderQR(){
-//		foreach ($_POST['post'] as $item){
-			$data['kodenya']= 'p/roductcheckproduct/';
+		foreach ($_POST['post'] as $item){
+			$data['kodenya']= $item;
 			$this->load->view('renderqr',$data);
-//		}
+		}
 
 
 
